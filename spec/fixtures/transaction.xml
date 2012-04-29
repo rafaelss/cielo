@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<requisicao-transacao id="1" versao="1.1.1">
+  <dados-ec>
+    <numero>1001734898</numero>
+    <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+  </dados-ec>
+  <dados-pedido>
+    <numero>285813768</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2010-07-14T13:56:12</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <url-retorno>http://minha.loja.com/pedido/285813768</url-retorno>
+  <autorizar>2</autorizar>
+  <capturar>false</capturar>
+</requisicao-transacao>
