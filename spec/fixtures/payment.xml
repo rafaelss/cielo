@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forma-pagamento>
+  <bandeira>visa</bandeira>
+  <produto>1</produto>
+  <parcelas>1</parcelas>
+</forma-pagamento>
