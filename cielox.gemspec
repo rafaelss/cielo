@@ -16,4 +16,5 @@ Gem::Specification.new do |gem|
   gem.version       = Cielo::VERSION
 
   gem.add_development_dependency "rspec", "~> 2.9.0"
+  gem.add_development_dependency "timecop", "~> 0.3.5"
 end
