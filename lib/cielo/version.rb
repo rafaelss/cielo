@@ -1,3 +1,3 @@
-module Cielox
+module Cielo
   VERSION = "0.0.0"
 end
