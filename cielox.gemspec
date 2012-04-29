@@ -15,6 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Cielo::VERSION
 
+  gem.add_dependency "happymapper", "~> 0.4.0"
   gem.add_development_dependency "rspec", "~> 2.9.0"
   gem.add_development_dependency "timecop", "~> 0.3.5"
 end
