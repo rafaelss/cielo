@@ -7,4 +7,5 @@ module Cielo
   autoload :Payment, "cielo/payment"
   autoload :Card, "cielo/card"
   autoload :TransactionRequest, "cielo/transaction_request"
+  autoload :Transaction, "cielo/transaction"
 end
