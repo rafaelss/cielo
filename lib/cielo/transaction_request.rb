@@ -21,7 +21,6 @@ module Cielo
       http.open_timeout = 10 * 1000
       http.read_timeout = 40 * 1000
       response = http.request_post("/servicos/ecommwsec.do", "mensagem=#{to_xml}")
-      puts response.body
       Transaction.parse(response.body, :single => true)
     end
   end
