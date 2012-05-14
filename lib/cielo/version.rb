@@ -1,3 +1,3 @@
 module Cielo
-  VERSION = "0.0.0"
+  VERSION = "0.0.1a"
 end
