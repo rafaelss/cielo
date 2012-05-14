@@ -25,6 +25,7 @@ describe Cielo::Configuration do
     end
 
     it "changes the logger" do
+      require "logger"
       MyLogger = Class.new(Logger)
 
       subject.logger = MyLogger.new(STDOUT)
