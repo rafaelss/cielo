@@ -38,7 +38,7 @@ describe Cielo::AuthorizationRequest do
     subject.tid = "100699306904CC7E1001"
     transaction = subject.authorize
 
-    transaction.authorization.code.should == 1
+    transaction.authorization.code.should == 6
     transaction.authorization.message.should == "Transação autorizada"
     transaction.authorization.time.should == Time.new(2010, 7, 14, 13, 56, 12)
     transaction.authorization.total.should == 100

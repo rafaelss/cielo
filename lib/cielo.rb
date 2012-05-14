@@ -19,6 +19,9 @@ module Cielo
   autoload :CaptureRequest, "cielo/capture_request"
   autoload :Capture, "cielo/capture"
 
+  autoload :CancelationRequest, "cielo/cancelation_request"
+  autoload :Cancelation, "cielo/cancelation"
+
   class << self
     def configuration
       @configuration ||= Configuration.new

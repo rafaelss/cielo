@@ -10,5 +10,6 @@ module Cielo
 
     has_one :authorization, Authorization
     has_one :capture, Capture
+    has_one :cancelation, Cancelation
   end
 end

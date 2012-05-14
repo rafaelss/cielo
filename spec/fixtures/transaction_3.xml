@@ -2,14 +2,11 @@
 <transacao versao="1.1.1" id="1" xmlns="http://ecommerce.cbmp.com.br">
   <tid>100699306904CC7E1001</tid>
   <pan>IqVz7P9zaIgTYdU41HaW/OB/d7Idwttqwb2vaTt8MT0=</pan>
-  <status>6</status>
-  <autorizacao>
-    <codigo>6</codigo>
-    <mensagem>Transação autorizada</mensagem>
-    <data-hora>2010-07-14T13:56:12</data-hora>
+  <status>9</status>
+  <cancelamento>
+    <codigo>9</codigo>
+    <mensagem>Transacao cancelada com sucesso</mensagem>
+    <data-hora>2012-05-14T09:52:14</data-hora>
     <valor>100</valor>
-    <lr>1</lr>
-    <arp>a1b2c3</arp>
-    <nsu>5e4d3c</nsu>
-  </autorizacao>
+  </cancelamento>
 </transacao>
