@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transacao versao="1.1.1" id="1" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100699306904CC7E1001</tid>
+  <pan>IqVz7P9zaIgTYdU41HaW/OB/d7Idwttqwb2vaTt8MT0=</pan>
+  <status>6</status>
+  <autorizacao>
+    <codigo>1</codigo>
+    <mensagem>Transação autorizada</mensagem>
+    <data-hora>2010-07-14T13:56:12</data-hora>
+    <valor>100</valor>
+    <lr>1</lr>
+    <arp>a1b2c3</arp>
+    <nsu>5e4d3c</nsu>
+  </autorizacao>
+</transacao>
