@@ -9,11 +9,15 @@ module Cielo
     has_one :shop, Shop
 
     def capture
-      http = Net::HTTP.new("qasecommerce.cielo.com.br", 443)
+      http = Net::HTTP.new(Cielo.configuration.host, Cielo.configuration.port)
       http.use_ssl = true
       http.open_timeout = 10 * 1000
       http.read_timeout = 40 * 1000
-      response = http.request_post("/servicos/ecommwsec.do", "mensagem=#{to_xml}")
+      Cielo.logger.info(http.inspect)
+
+      response = http.request_post(Cielo.configuration.path, "mensagem=#{to_xml}")
+      Cielo.logger.info(response.body)
+
       Transaction.parse(response.body, :single => true)
     end
   end
