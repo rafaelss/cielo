@@ -8,6 +8,8 @@ module Cielo
   autoload :Card, "cielo/card"
   autoload :TransactionRequest, "cielo/transaction_request"
   autoload :Transaction, "cielo/transaction"
+  autoload :CaptureRequest, "cielo/capture_request"
+  autoload :Capture, "cielo/capture"
   autoload :Configuration, "cielo/configuration"
 
   class << self

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transacao versao="1.1.1" id="1" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100699306904CC7E1001</tid>
+  <pan>IqVz7P9zaIgTYdU41HaW/OB/d7Idwttqwb2vaTt8MT0=</pan>
+  <status>6</status>
+  <captura>
+    <codigo>1</codigo>
+    <mensagem>Transação capturada</mensagem>
+    <data-hora>2010-07-14T13:56:12</data-hora>
+    <valor>100</valor>
+  </captura>
+</transacao>
