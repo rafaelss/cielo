@@ -4,7 +4,7 @@ module Cielo
 
     tag "dados-portador"
     element :number, String, :tag => "numero"
-    element :validity, String, :tag => "validade"
+    element :validity, Validity, :tag => "validade"
     element :indicator, String, :tag => "indicador"
     element :security_code, Integer, :tag => "codigo-seguranca"
     element :owner, String, :tag => "nome-portador"

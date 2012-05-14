@@ -5,7 +5,7 @@ describe Cielo::Card do
 
   it "#to_xml" do
     subject.number = "4012001037141112"
-    subject.validity = "201511"
+    subject.validity = Cielo::Validity.new(2015, 11)
     subject.indicator = 1
     subject.security_code = 371
     subject.owner = "FULANO DE TAL"
