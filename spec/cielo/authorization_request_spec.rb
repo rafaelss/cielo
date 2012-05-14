@@ -25,7 +25,7 @@ describe Cielo::AuthorizationRequest do
   it "#authorize" do
     stub_request(:post, "https://qasecommerce.cielo.com.br/servicos/ecommwsec.do").
       with(
-        :body => "mensagem=<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<requisicao-autorizacao-tid id=\"1\" versao=\"1.1.1\">\n  <tid>100699306904CC7E1001</tid>\n  <dados-ec>\n    <numero>1006993069</numero>\n    <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>\n  </dados-ec>\n</requisicao-autorizacao-tid>\n",
+        :body => "mensagem=<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<requisicao-autorizacao-tid id=\"1\" versao=\"1.1.1\">\n  <tid>100699306904CC7E1001</tid>\n  <dados-ec>\n    <numero>1006993069</numero>\n    <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>\n  </dados-ec>\n</requisicao-autorizacao-tid>\n"
       ).
       to_return(
         :status => 200,
