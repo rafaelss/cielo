@@ -6,6 +6,7 @@ describe Cielo::Configuration do
   its(:host) { should == "qasecommerce.cielo.com.br" }
   its(:port) { should == 443 }
   its(:path) { should == "/servicos/ecommwsec.do" }
+  its(:logger) { should be_nil }
 
   context "defining new values" do
     it "changes the host" do
@@ -21,6 +22,13 @@ describe Cielo::Configuration do
     it "changes the path" do
       subject.host = "/something_else"
       subject.host.should == "/something_else"
+    end
+
+    it "changes the logger" do
+      MyLogger = Class.new(Logger)
+
+      subject.logger = MyLogger.new(STDOUT)
+      subject.logger.should be_instance_of(MyLogger)
     end
   end
 end

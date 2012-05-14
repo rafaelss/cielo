@@ -1,6 +1,6 @@
 module Cielo
   class Configuration
-    attr_accessor :host, :port, :path
+    attr_accessor :host, :port, :path, :logger
 
     def initialize
       @host = "qasecommerce.cielo.com.br"

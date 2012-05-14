@@ -18,5 +18,12 @@ module Cielo
     def configure
       yield configuration if block_given?
     end
+
+    def logger
+      configuration.logger ||= begin
+        require "logger"
+        Logger.new(STDOUT)
+      end
+    end
   end
 end
