@@ -15,7 +15,10 @@ module Cielo
       http.read_timeout = 40 * 1000
       Cielo.logger.info(http.inspect)
 
-      response = http.request_post(Cielo.configuration.path, "mensagem=#{to_xml}")
+      post_body = "mensagem=#{to_xml}"
+      Cielo.logger.info(post_body)
+
+      response = http.request_post(Cielo.configuration.path, post_body)
       Cielo.logger.info(response.body)
 
       Transaction.parse(response.body, :single => true)
