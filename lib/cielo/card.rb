@@ -1,3 +1,5 @@
+require "cielo/card/validity"
+
 module Cielo
   class Card
     include HappyMapper

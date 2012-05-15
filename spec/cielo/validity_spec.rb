@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe Cielo::Validity do
+describe Cielo::Card::Validity do
   before do
     Timecop.freeze(Time.parse("2012-05-14 09:23:00"))
   end
