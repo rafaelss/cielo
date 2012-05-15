@@ -43,7 +43,7 @@ describe Cielo::CaptureRequest do
     transaction.status.should == 6
     transaction.capture.code.should == 6
     transaction.capture.message.should == "Transação capturada"
-    transaction.capture.time.should == Time.new(2010, 7, 14, 13, 56, 12)
+    transaction.capture.time.should == Time.parse("2010-07-14 13:56:12")
     transaction.capture.total.should == 100
   end
 end

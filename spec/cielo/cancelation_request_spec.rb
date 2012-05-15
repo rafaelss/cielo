@@ -43,7 +43,7 @@ describe Cielo::CancelationRequest do
     transaction.status.should == 9
     transaction.cancelation.code.should == 9
     transaction.cancelation.message.should == "Transacao cancelada com sucesso"
-    transaction.cancelation.time.should == Time.new(2012, 5, 14, 9, 52, 14)
+    transaction.cancelation.time.should == Time.parse("2012-05-14 09:52:14")
     transaction.cancelation.total.should == 100
   end
 end
