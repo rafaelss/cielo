@@ -8,7 +8,7 @@ module Cielo
         @month = month.to_i
 
         now = Time.now
-        if @year < now.year || @month < now.month
+        if @year < now.year || (@year == now.year && @month < now.month)
           raise InvalidDate, "#{@month}/#{@year} is not valid"
         end
       end
