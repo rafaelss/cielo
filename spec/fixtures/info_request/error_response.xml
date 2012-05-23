@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<erro xmlns="http://ecommerce.cbmp.com.br">
+  <codigo>003</codigo>
+  <mensagem>Não foi encontrada transação para o Tid '103760993800001E1001'.</mensagem>
+</erro>

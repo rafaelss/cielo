@@ -23,6 +23,8 @@ module Cielo
   autoload :CancelationRequest, "cielo/cancelation_request"
   autoload :Cancelation, "cielo/cancelation"
 
+  autoload :InfoRequest, "cielo/info_request"
+
   class << self
     def configuration
       @configuration ||= Configuration.new
