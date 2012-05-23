@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<requisicao-transacao id="1" versao="1.1.1">
+  <dados-ec>
+    <numero>1006993069</numero>
+    <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>
+  </dados-ec>
+  <dados-portador>
+    <numero>4012001037141112</numero>
+    <validade>201511</validade>
+    <indicador>1</indicador>
+    <codigo-seguranca>371</codigo-seguranca>
+    <nome-portador>FULANO DE TAL</nome-portador>
+  </dados-portador>
+  <dados-pedido>
+    <numero>285813768</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2010-07-14T13:56:12</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <url-retorno>http://minha.loja.com/pedido/285813768</url-retorno>
+  <autorizar>2</autorizar>
+  <capturar>false</capturar>
+</requisicao-transacao>

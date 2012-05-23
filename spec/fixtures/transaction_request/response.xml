@@ -1,0 +1,18 @@
+<transacao versao="1.1.1" id="1" xmlns="http://ecommerce.cbmp.com.br">
+  <tid>100699306905519A1001</tid>
+  <pan>IqVz7P9zaIgTYdU41HaW/OB/d7Idwttqwb2vaTt8MT0=</pan>
+  <dados-pedido>
+    <numero>285813768</numero>
+    <valor>100</valor>
+    <moeda>986</moeda>
+    <data-hora>2012-05-23T09:14:11.922-03:00</data-hora>
+    <idioma>PT</idioma>
+  </dados-pedido>
+  <forma-pagamento>
+    <bandeira>visa</bandeira>
+    <produto>1</produto>
+    <parcelas>1</parcelas>
+  </forma-pagamento>
+  <status>0</status>
+  <url-autenticacao>https://qasecommerce.cielo.com.br/web/index.cbmp?id=18beb3bf46e4ee2a3407eafd94d382ca</url-autenticacao>
+</transacao>
