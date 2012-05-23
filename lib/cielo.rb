@@ -3,6 +3,7 @@ require "happymapper"
 
 module Cielo
   autoload :Configuration, "cielo/configuration"
+  autoload :Error, "cielo/error"
 
   autoload :Shop, "cielo/shop"
   autoload :Order, "cielo/order"
