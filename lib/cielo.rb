@@ -14,6 +14,8 @@ module Cielo
   autoload :TransactionRequest, "cielo/transaction_request"
   autoload :Transaction, "cielo/transaction"
 
+  autoload :Authentication, "cielo/authentication"
+
   autoload :AuthorizationRequest, "cielo/authorization_request"
   autoload :Authorization, "cielo/authorization"
 
