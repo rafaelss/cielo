@@ -36,7 +36,7 @@ describe Cielo::AuthorizationRequest do
     subject.shop = shop
     subject.id = 1
     subject.tid = "100699306904CC7E1001"
-    transaction = subject.authorize
+    transaction = subject.request
 
     transaction.authorization.code.should == 6
     transaction.authorization.message.should == "Transação autorizada"

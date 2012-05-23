@@ -78,7 +78,7 @@ describe Cielo::TransactionRequest do
     subject.return_url = "http://minha.loja.com/pedido/285813768"
     subject.authorize = 2
     subject.capture = false
-    transaction = subject.create
+    transaction = subject.request
 
     transaction.tid.should == "100699306904CC7E1001"
     transaction.pan.should == "IqVz7P9zaIgTYdU41HaW/OB/d7Idwttqwb2vaTt8MT0="

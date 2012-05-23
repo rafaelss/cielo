@@ -36,7 +36,7 @@ describe Cielo::CancelationRequest do
     subject.shop = shop
     subject.id = 1
     subject.tid = "100699306904CC7E1001"
-    transaction = subject.cancel
+    transaction = subject.request
 
     transaction.tid.should == "100699306904CC7E1001"
     transaction.pan.should == "IqVz7P9zaIgTYdU41HaW/OB/d7Idwttqwb2vaTt8MT0="
