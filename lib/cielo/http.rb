@@ -2,8 +2,11 @@ require "net/http"
 
 module Cielo
   module HTTP
-    def request
-      http = Net::HTTP.new(Cielo.configuration.host, Cielo.configuration.port)
+    def request(host = nil, port = nil)
+      host ||= Cielo.configuration.host
+      port ||= Cielo.configuration.port
+
+      http = Net::HTTP.new(host, port)
       http.use_ssl = true
       http.open_timeout = 10 * 1000
       http.read_timeout = 40 * 1000
