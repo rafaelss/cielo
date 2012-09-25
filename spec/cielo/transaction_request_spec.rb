@@ -86,6 +86,6 @@ describe Cielo::TransactionRequest do
     transaction.tid.should have(20).chars
     transaction.pan.should == "IqVz7P9zaIgTYdU41HaW/OB/d7Idwttqwb2vaTt8MT0="
     transaction.status.should == 0
-    transaction.authentication_url = "https://qasecommerce.cielo.com.br/web/index.cbmp?id=4c0476919b9ea10d11f761bd3158bde0"
+    transaction.authentication_url.should match(/https:\/\/qasecommerce\.cielo\.com\.br\/web\/index.cbmp\?id=.+/)
   end
 end
