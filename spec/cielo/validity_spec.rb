@@ -10,15 +10,15 @@ describe Cielo::Card::Validity do
   end
 
   it "raises an exception if year is not valid" do
-    expect { described_class.new(Time.now.year - 1, Time.now.month) }.should raise_error(described_class::InvalidDate)
+    expect { described_class.new(Time.now.year - 1, Time.now.month) }.to raise_error(described_class::InvalidDate)
   end
 
   it "raises an exception if month is not valid" do
-    expect { described_class.new(Time.now.year, Time.now.month - 1) }.should raise_error(described_class::InvalidDate)
+    expect { described_class.new(Time.now.year, Time.now.month - 1) }.to raise_error(described_class::InvalidDate)
   end
 
   it "raises an exception if both year and month are not valid" do
-    expect { described_class.new(Time.now.year - 1, Time.now.month - 1) }.should raise_error(described_class::InvalidDate)
+    expect { described_class.new(Time.now.year - 1, Time.now.month - 1) }.to raise_error(described_class::InvalidDate)
   end
 
   describe "#to_s" do
