@@ -21,4 +21,17 @@ describe Cielo::Order do
 
     xml.should == File.read(File.expand_path("../../fixtures/order.xml", __FILE__))
   end
+
+  describe "with soft descriptor" do
+    it "#to_xml" do
+      subject.number = 285813768
+      subject.total = 1
+      subject.currency = 986
+      subject.time = Time.now
+      subject.language = "PT"
+      subject.soft_descriptor = "CieloX Store"
+
+      expect(subject.to_xml).to eq(File.read(File.expand_path("../../fixtures/order_2.xml", __FILE__)))
+    end
+  end
 end

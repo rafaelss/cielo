@@ -8,5 +8,6 @@ module Cielo
     element :currency, String, :tag => "moeda"
     element :time, Time, :tag => "data-hora", :on_save => proc { |value| value.strftime("%Y-%m-%dT%H:%M:%S") }
     element :language, String, :tag => "idioma"
+    element :soft_descriptor, String, :tag => "soft-descriptor"
   end
 end

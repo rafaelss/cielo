@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dados-pedido>
+  <numero>285813768</numero>
+  <valor>100</valor>
+  <moeda>986</moeda>
+  <data-hora>2010-07-14T13:56:12</data-hora>
+  <idioma>PT</idioma>
+  <soft-descriptor>CieloX Store</soft-descriptor>
+</dados-pedido>
