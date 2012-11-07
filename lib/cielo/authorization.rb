@@ -7,7 +7,7 @@ module Cielo
     element :message, String, :tag => "mensagem"
     element :time, Time, :tag => "data-hora"
     element :total, Integer, :tag => "valor"
-    element :lr, Integer
+    element :lr, String
     element :arp, String
     element :nsu, String
   end
