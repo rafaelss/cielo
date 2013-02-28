@@ -8,8 +8,10 @@ module Cielo
 
       http = Net::HTTP.new(host, port)
       http.use_ssl = true
+      http.ssl_version = :TLSv1
       http.open_timeout = 10 * 1000
       http.read_timeout = 40 * 1000
+      http.verify_mode = OpenSSL::SSL::VERIFY_PEER
       Cielo.logger.info(http.inspect)
 
       post_body = "mensagem=#{to_xml}"
