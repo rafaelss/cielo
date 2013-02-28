@@ -1,4 +1,2 @@
-source :rubygems
-
-# Specify your gem's dependencies in cielox.gemspec
+source "http://rubygems.org"
 gemspec
