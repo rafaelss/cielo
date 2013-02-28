@@ -42,7 +42,7 @@ describe Cielo::AuthorizationRequest do
     transaction.authorization.message.should == "Transação autorizada"
     transaction.authorization.time.should == Time.parse("2010-07-14 13:56:12")
     transaction.authorization.total.should == 100
-    transaction.authorization.lr.should == 1
+    transaction.authorization.lr.should == "1"
     transaction.authorization.arp.should == "a1b2c3"
     transaction.authorization.nsu.should == "5e4d3c"
   end
