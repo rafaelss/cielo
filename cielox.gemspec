@@ -16,7 +16,7 @@ Gem::Specification.new do |gem|
   gem.version       = Cielo::VERSION
 
   gem.add_dependency "happymapper", "~> 0.4.0"
-  gem.add_development_dependency "rspec", "~> 2.11.0"
-  gem.add_development_dependency "timecop", "~> 0.5.2"
-  gem.add_development_dependency "webmock", "~> 1.8.11"
+  gem.add_development_dependency "rspec", "~> 2.13.0"
+  gem.add_development_dependency "timecop", "~> 0.5.9.2"
+  gem.add_development_dependency "webmock", "~> 1.10.0"
 end
